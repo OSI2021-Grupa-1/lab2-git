@@ -25,12 +25,9 @@ double subtract(double const a, double const b)
 int main() {
 	std::cout << "Kalkulator:" << std::endl;
 	double a, b;
-	do
-	{
-		std::cout << "Operatori: ";
-		std::cin >> a >> b;
-	} while (a <= 0 || a > 4 || b <= 0 || b > 4);
-
+	std::cout << "Operandi: ";
+	std::cin >> a >> b;
+	
 	std::cout << "Operacija: \n";
 	std::cout << "1. Sabiranje \n";
 	std::cout << "2. Oduzimaje \n";
@@ -38,7 +35,11 @@ int main() {
 	std::cout << "4. Dijeljenje \n";
 
 	int opcija;
+	do
+	{
 	std::cin >> opcija;
+	} while (opcija <= 0 || opcija > 4);
+
 	switch (opcija)
 	{
 	case 1:
