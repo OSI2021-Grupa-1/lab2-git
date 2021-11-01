@@ -12,18 +12,18 @@ double divide(double a, double b) {
 		return a / b;
 }
 
-
 double multiply(double const a, double const b) {
 	return a * b;
 }
 
 int main() {
-	bool running = true;
 	std::cout << "Kalkulator:" << std::endl;
-	while (running) {
 		double a, b;
+		do
+		{
 		std::cout << "Operatori: ";
 		std::cin >> a >> b;
+		} while (a <= 0 || a > 4 || b <= 0 || b > 4);
 
 		std::cout << "Operacija: \n";
 		std::cout << "1. Sabiranje \n";
@@ -45,12 +45,10 @@ int main() {
 			std::cout << multiply(a, b);
 			break;
 		case 4:
-			//std::cout << divide(a, b);
+			std::cout << divide(a, b);
 			break;
 		default:
-			running = false;
 			break;
 		}
 	}
 	
-}
