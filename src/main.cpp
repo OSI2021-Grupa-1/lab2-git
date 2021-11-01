@@ -22,7 +22,7 @@ int main() {
 		std::cout << "2. Oduzimaje \n";
 		std::cout << "3. Mnozenje \n";
 		std::cout << "4. Dijeljenje \n";
-		std::cout << "4. Dijeljenje \n";
+
 		int opcija;
 		std::cin >> opcija;
 		switch (opcija)
@@ -31,15 +31,16 @@ int main() {
 			std::cout << add(a, b);
 			break;
 		case 2:
-			std::cout << subtract(a, b);
+			//std::cout << subtract(a, b);
 			break;
 		case 3:
 			std::cout << multiply(a, b);
 			break;
 		case 4:
-			std::cout << divide(a, b);
+			//std::cout << divide(a, b);
 			break;
 		default:
+			running = false;
 			break;
 		}
 	}
