@@ -18,7 +18,7 @@ double multiply(double const a, double const b) {
 }
 
 
-double subtrac(double const a, double const b)
+double subtract(double const a, double const b)
 {
 	return a - b;
 }
