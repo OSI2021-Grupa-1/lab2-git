@@ -45,7 +45,7 @@ int main() {
 			std::cout << add(a, b);
 			break;
 		case 2:
-			//std::cout << subtract(a, b);
+			std::cout << subtract(a, b)<< std::endl;
 			break;
 		case 3:
 			std::cout << multiply(a, b);
