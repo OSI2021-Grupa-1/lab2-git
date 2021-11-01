@@ -16,6 +16,12 @@ double multiply(double const a, double const b) {
 	return a * b;
 }
 
+
+double subtract(double const a, double const b)
+{
+	return a - b;
+}
+
 int main() {
 	std::cout << "Kalkulator:" << std::endl;
 		double a, b;
